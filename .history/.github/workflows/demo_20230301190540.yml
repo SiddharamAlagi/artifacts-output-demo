@@ -42,7 +42,5 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist-file
-      - name: output filename 
-        run: echo "${ needs.build.output.script-file}"    
       - name: Deploy
         run: echo "Deploying..."
